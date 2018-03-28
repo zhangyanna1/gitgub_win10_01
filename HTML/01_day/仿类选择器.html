@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>仿类选择器</title>
+	<style type="text/css">
+	/*
+		伪类选择器
+		:link 普通的链接未访问
+		：visited 访问过的链接
+		:hover 鼠标放哪哪变色
+		：active 点击变色
+		p标签也可以用
+	*/
+		a:link{
+			color: yellow;
+		}
+		a:visited{
+			color: red;
+			font-size:60px;
+		}
+		a:hover{
+			color: skyblue;
+		}
+		a:active{
+			color: gold;
+		}
+		p:hover{
+			background-color: skyblue;
+		}
+		p:active{
+			background-color: gold;
+		}
+		/*对焦变色*/
+		input:focus{
+			background-color: yellow;
+		}
+		/*兼容大部分浏览器*/
+		p::selection{
+			background-color:orange;
+		}
+		/*兼容火狐浏览器*/
+		P::-moz-selection{
+			background-color: orange;
+		}
+	</style>	
+</head>
+<body>
+	<a href="http://www.baidu.com456">没访问</a>
+	<a href="http://www.baidu.com">已访问</a>
+	<a href="http://www.baidu1234.com">未访问</a>
+	<p>我是小可爱</p>
+<!-- 创建文本框-->
+	<input type="text"/>
+</body>
+</html>

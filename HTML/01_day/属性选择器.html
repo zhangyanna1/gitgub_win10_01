@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>属性选择器</title>
+	<style type="text/css">
+	/*作用：可以根据元素的属性或属性的值来选取指定元素*/
+	
+	p[title="hello"]{
+		background-color:yellow;
+	}
+	p[title="abc"]{
+		background-color:yellow;
+	}
+	/*以开头*/
+	p[title^="abc"]{
+		background-color:yellow;
+	}
+	/*以末面*/
+	p[title$="abc"]{
+		background-color:blue;
+	}
+	/*包含e的*/
+	p[title*="e"]{
+		background-color:black;
+	}
+	</style>
+</head>
+<body>
+	<p title="hello">我是一个段落</p>
+	<p>我是一个段落</p>
+	<p>我是一个段落</p>
+	<p>我是一个段落</p>
+	<p title="abcg">我是一个段落</p>
+	<p title="abcc">我是一个段落</p>
+	<p title="abc">我是一个段落</p>
+
+</body>
+</html>

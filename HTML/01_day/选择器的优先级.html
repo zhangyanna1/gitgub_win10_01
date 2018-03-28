@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>选择器的优先级</title>
+	<style type="text/css">
+	/*优先级
+		内联样式  1000  不推介使用
+		id        100
+		类和伪类  10
+		元素选择器 1
+		通配      0
+		继承没有优先级
+		复合选择器 把选择器都相加
+		并级选择器，后面覆盖前面
+		
+	*/
+		.p1{
+			color: pink
+		}
+		#p2{
+			color:blue 
+		}
+		p{
+			color: yellow
+		}
+		*{
+			color: red
+		}
+		/*
+		复合选择器
+		*/
+		p1#p2{
+			color: green
+		}
+		/*
+			并级选择器
+		*/
+
+		
+		p.p1{
+			color: black
+		}
+	
+	</style>
+		
+			
+
+
+</head>
+<body>
+	<p class="p1" id="p2">我是小p</p>
+
+</body>
+</html>

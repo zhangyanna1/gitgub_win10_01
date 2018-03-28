@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>子元素选择器</title>
+	<style type="text/css">
+		/*选中第一个的子元素*/
+		body>p:first-child{
+			background-color: green;
+		}
+		/*选中最后的子元素*/
+		p:last-child{
+			background-color: yellow;
+		}
+		/*第三行变色*/
+		p:nth-child(3){
+			background-color: green;
+		}
+		/*偶数变色*/
+		p:nth-child(even){
+			background-color: blue;
+		}
+		/*基数变色*/
+		p:nth-child(odd){
+			background-color: skyblue;
+		}
+		p:first-of-type{
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<span>我是span</span>
+	<p>我是第一个</p>
+	<p>我是第一个</p>
+	<p>我是第一个</p>
+	<p>我是第一个</p>
+	<p>我是第一个</p>
+	<p>我是第一个</p>
+	
+</body>
+</html>
