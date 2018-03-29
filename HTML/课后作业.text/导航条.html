@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>导航条</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;	
+		}
+
+		.nav{
+			width:1000px;
+			list-style: none;
+			background-color:#6495ed;
+			margin:20px auto;
+
+		}
+		.nav li{
+			width: 25%;
+			float: left;
+
+
+		}
+		.clearfix:after{
+			content:"";
+			display:block;
+			clear:both;
+		}
+		.nav a{
+			display:block;
+			text-align: center;
+			color: white;
+			font-weight: bold;
+			text-decoration: none;
+			padding:5px 0;
+
+		}
+		.nav a:hover{
+			background-color:#c00;
+		}
+		
+	</style>
+</head>
+<body>
+	<ul class="nav clearfix">
+		<li><a href="#">新闻</a></li>
+		<li><a href="#">动态</a></li>
+		<li><a href="#">联系</a></li>
+		<li><a href="#">关于</a></li>
+	</ul>
+</body>
+</html>

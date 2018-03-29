@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +8,7 @@
 		li{
 			list-style: none;
 			font:16px "微软雅黑";
-			color: pink;
+			/*color: pink;*/
 			float: left;
 			padding:15px;
 			border-top:1px solid orange;
@@ -15,25 +16,39 @@
 			border-bottom:1px solid orange;
 
 		}
-		.a{
+		.c{
 			padding-right:30px;
 			padding-left: 30px;
 		}
 		.b{
 			border-right:1px solid orange; 
 		}
+		a:visited{
+			color: pink;
+		}
+		a:hover{
+			color: red;
+		}
+		a:active{
+			
+
+			color: yellow;
+		}
+
 	
 	</style>
 </head>
 <body>
 	<ul>
-		<li class="a">首页</li>
+		<a href="http://www.baidu.com">
+		<li class="c">首页</li>
 		<li>公司简介</li>
 		<li>解决方案</li>
 		<li>行业动态</li>
 		<li>招贤纳才</li>
 		<li>公司新闻</li>
 		<li class="b">联系我们</li>
+		</a>
 	</ul>
 
 
