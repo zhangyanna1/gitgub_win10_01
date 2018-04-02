@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>趣玩网</title>
+	<style type="text/css">
+	*{margin: 0;
+	  padding: 0;
+	}
+
+	/*测试*/
+	.ceshi_border{
+		border:1px solid #f00;
+	}
+	body{
+		padding-top:150px;
+	}
+
+	
+	    /*高度塌陷*/
+	    .clearfix{
+	    	content: "";
+	    	display: block;
+	    	clear:both;
+	    }
+		.plus{
+			width:1225px;
+			/*height:3404px;*/
+			/*border: 1px red solid;*/
+			margin:0 auto;
+			background-color: #f2eadd;
+		}
+		.head{
+			width: 100%;
+			height: 49px;
+			/*border: 1px red solid;*/
+			background-color: #535353;
+			
+
+		}
+		.head1{width:495px;
+			   height: 49px;
+			   /*border: 1px red solid; */
+			   float: left;
+
+		}
+		.head2{
+			  width: 854px;
+			  height: 49px;
+			  /*border: 1px red solid;*/
+			  float: left;
+
+		}
+		.p1{
+			float: left;
+			list-style: none;
+			margin-left: 30px;
+			line-height: 49px;
+			text-decoration: none;
+			/*font-family: "微软雅黑";*/
+			
+		}
+		.p2{
+
+			float: left;
+			list-style: none;
+			margin-left: 20px;
+			line-height: 49px;
+			/*font-family: "微软雅黑";*/
+
+
+
+		}
+		.p3{
+			text-decoration: none;
+			color: white;
+			font:13px "微软雅黑";
+			font-weight: bold;
+
+
+			}
+		.p4{float: left;
+			margin-left: 400px;
+			width: 235px;
+			height: 47px;
+			outline:none;
+			border:1px solid white;
+		}
+		.p5{line-height: 49px;
+			margin-left: 15px;
+			text-decoration: none;
+		}
+		.p6{margin-left: 20px;
+			text-decoration: none;}
+		.p7{
+			float:left;
+			height:49px; 
+		}
+		.t1{
+			float: left;
+		}
+		.t2{height: 49px;
+			float: right;
+
+		}
+		.head3{
+			width:100%;
+			height:32px;
+			/*border:1px red solid;*/
+			background-color: #8f8c7f;
+
+
+		}
+		.p8{
+			/*line-height: 32px;*/
+			text-decoration: none;
+			font:13px "微软雅黑";
+			font-weight: bold;
+			color: white;
+			margin-left: 20px;
+
+			
+		}
+		.p9{
+			 line-height:32px;
+		}
+		.dd{
+			position:fixed;
+			left:10px;
+			top:310px;
+			width:110px;
+			height:178px;
+			/*border:1px solid red;*/
+		}
+		.d1{
+			width:110px;
+			height:178px;
+		}
+		.ww{
+			position:fixed;
+			left:0px;
+			top:0px;
+		
+		}
+
+
+
+
+		}
+		.title{
+			width:100%;
+			height:65px;
+			/*border: 1px solid red;*/
+			margin-top:60px;
+			margin-bottom:40px;
+			padding-bottom:200px;
+			
+		}
+		.p10{
+			font: 28px "微软雅黑";
+			/*margin-left: 60px;*/
+			font-weight: bold;
+			color: #333;
+		}
+		.p11{
+			color:#555;
+			font:16px "微软雅黑";
+			/*margin-left:60px;*/
+
+		}
+		.content{
+			width:1225px;
+			height:2695px;
+			margin-top:50px;
+			/*border:1px solid red;*/
+			/*margin-left:60px;*/
+		}
+		.part1{
+			width:478px;
+			height:478px;
+			/*border:1px solid red;*/
+			float:left;
+
+		}
+		.c1{
+			width:478px;
+			height:478px;
+		}
+		.c2{
+			width:233px;
+			height: 193px;
+
+		}
+		.c8{
+			width:478px;
+			height:478px;
+		}
+		.c6{
+			width:233px;
+			height:233px;
+		}
+		.c7{
+			width:233px;
+			height:233px;
+		}
+		.c9{
+			float:left; 
+			width:40px;
+			
+		}
+
+		.c10{
+			width:40px;
+			height:40px;
+			float:left;
+		}
+		.c11{
+			width:233px;
+			height:193px;
+		}
+
+
+
+		.part2{
+			width:233px;
+			height:233px;
+			/*border:1px solid black;*/
+			float: left;
+			margin-left:13.2px;
+			margin-bottom:10px; 
+			background-color: white;
+
+
+		}
+		.part4{
+			width:233px;
+			height:233px;
+			/*border:1px solid red;*/
+			float: left;
+			margin-top:8px;
+			background-color:white;
+
+		}
+		.part3{
+			float:left;
+			width:233px;
+			height:233px;
+			/*border: 1px solid blue;*/
+			margin-left:8px;
+			margin-top:8px;
+			background-color: white;
+		}
+		.part5{
+			width: 233px;
+			height: 233px;
+			/*border:1px solid green;*/
+			float: left;
+			margin-left:13.9px;
+			margin-top:8px;
+			background-color: white;
+		}
+		.part6{
+			width:233px;
+			height:233px;
+			/*border:1px solid pink;*/
+			float:right;
+			margin-top:8px;
+			background-color:white;
+		
+		}
+		
+		.z1{
+			
+			display:inline-block;
+			margin-left:8px;
+			list-style-type:none; 
+		}
+		.z2{
+			font:14px "微软雅黑";
+			text-decoration: none;
+			color:black;
+		}
+		.z3{
+			font:13px "微软雅黑";
+			text-decoration: none;
+			color:#8f8c7f;
+		}
+		.tail{
+			width:100%;
+			height:412px;
+			background-color:#d9d9d0;
+			/*border:1px solid red;*/
+			margin-top:50px;
+		}
+		.g1{
+			width:800px;
+			height:224px;
+			margin:50px 330px 50px;
+			/*border:1px solid black;*/
+
+
+		}
+		.g5{
+			width:100%;
+			height:111px;
+			/*border:1px solid red;*/
+
+		}
+		.j1{
+			width:100%;
+			height:35px;
+			/*border:1px solid red;*/
+			text-align:center;
+			line-height:50px;
+			font:13px "微软雅黑" ; 
+		}
+		.j2{
+			margin-left:5px; 
+		}
+
+	
+		.l1{
+
+			width:100%;
+			height:30px;
+			/*border:1px solid green;*/
+			margin-top:20px;
+
+			background-color: #8f8c7f;
+			
+		}
+		.l2{
+			float: left;
+			font:13px "微软雅黑";
+			margin-left: 5px;
+			line-height:30px;
+		}
+		.l3{
+			float: right;
+			margin-right:20px;
+			line-height:30px;
+		}
+		.l4{
+			font:13px "微软雅黑";
+
+		}
+	
+	
+	
+	</style>
+</head>
+<body bgcolor="#f2eadd">
+	<div class="dd"><img class="d1" src="p.png"></div>
+
+	<div class="ww">
+	<!-- 头部 -->
+		<div class="head">
+			<div class="head1">
+				<img class="t1" src="趣玩.png" alt="">
+				<div class="">
+					<ul class="">
+			<li class="p2"><a class="p3"  href="#">每日上新</a></li>
+			<li class="p1"><a class="p3" href="#">TOP50</a></li>
+			<li class="p1"><a class="p3" href="#">我勒个去</a></li>
+			<li class="p1"><a class="p3" href="#">趣玩App</a></li>
+		</ul>
+				</div>
+			</div>
+			<div class="head2">
+				<input class="p4" type="text" >
+				<img class="p7" src="放大镜.png">
+				<span class="p5"><a class="p3" href="">登录</a></span>
+				<span class="p6"><a class="p3" href="">注册</a></span>
+				<img class="t2" src="购物车.png" alt="">
+			</div>
+		</div>
+		<div class="head3">
+			<span class="p9"><a class="p8" href="#">家居良品</a></span>
+			<span class="p9"><a class="p8" href="#">男得好货</a></span>
+			<span class="p9"><a class="p8" href="#">清新萌物</a></span>
+			<span class="p9"><a class="p8" href="#">与众不童</a></span>
+			<span class="p9"><a class="p8" href="#">视频找好玩</a></span>
+		</div>
+	</div>
+
+
+
+<div class="plus clearfix">
+		<!-- 标题 -->
+		<div class="title">
+			<p class="p10">欢迎来到趣玩</p>
+			<p class="p11">在这里，邂逅全球有趣好玩的商品，发现趣味相投的朋友!</p>
+		</div>
+		<!-- 正文 -->
+		<div class="content">
+			<!--部分1 -->
+			<div class="part1">
+				<img class="c1" src="img_url1451507.jpg">
+			</div>
+			<div class="part2">
+				<img class="c6" src="动图.png">
+			</div>
+			<div class="part2">
+				<img class="c2" src="1515545062476004009-478.jpg">
+				<ul class="z1">
+				<a class="z2" href="#"><li>迷你加湿取暖器-优雅银</li></a>
+				<a class="z3" href="#"><li>¥198.00</li></a>
+				</ul>
+			</div>
+			<div class="part2">
+				<img class="c2" src="1497831077227446906-478.jpg">
+				<ul class="z1">
+				<a class="z2" href="#"><li>揽月3d打印月球灯</li></a>
+				<a class="z3" href="#"><li>¥108.00</li></a>
+				</ul>
+			</div>
+			<div class="part2">
+				<img class="c2" src="1505349081891078901-478.jpg">
+				<ul class="z1">
+				<a class="z2" href="#"><li>极盗无门III 双重安全公文背包</li></a>
+				<a class="z3" href="#"><li>¥418.00</li></a>
+				</ul>
+			</div>
+			<div class="part2">
+				<img class="c7" src="img_url4872964.jpg">
+			</div>
+			<div class="part2">
+				<div class="c11"><img class="c2" src="1522201093306699094-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>闺蜜甜心保温杯-公主粉</li></a>
+				<a class="z3" href="#"><li>¥188.00</li></a>
+				</ul>
+			</div>
+
+			<!-- 部分2 -->
+			<div class="part1">
+				<img class="c8" src="img_url1748032.jpg">
+			</div>
+			<div class="part2">
+				<div class="c11"><img class="c2" src="1522103902271700952-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>新款层叠卡包抽拉零钱包-2代</li></a>
+				<a class="z3" href="#"><li>¥60.00</li></a>
+				</ul>
+			</div>
+			<div class="part2">
+				<div class="c11"><img class="c2" src="1468881589241843943-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>日本原装正品KAI专业修眉刀</li></a>
+				<a class="z3" href="#"><li>¥29.90</li></a>
+				</ul>
+			</div>
+			<div class="part2">
+				<div class="c11"><img class="c2" src="1516572795864308219-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>北欧欧慕料理机多功能搅拌棒</li></a>
+				<a class="z3" href="#"><li>¥199.00</li></a>
+				</ul>
+			</div>
+			<div class="part2">
+				<div class="c11"><img class="c2" src="1521054661502353302-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>萌犬光瓷-柯基</li></a>
+				<a class="z3" href="#"><li>¥199.00</li></a>
+				</ul>
+			</div>
+			<div class="part2">
+				<div class="c11"><img class="c2" src="1521051233470161950-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>NEWSPAPR防水智能纸手表</li></a>
+				<a class="z3" href="#"><li>¥198.00</li></a>
+				</ul>
+			</div>
+			<div class="part2">
+				<div class="c11"><img class="c2" src="1521082145905927676-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>NEWSPAPR防水智能纸手表</li></a>
+				<a class="z3" href="#"><li>¥198.00</li></a>
+				</ul>
+			</div>
+
+			<!-- 部分3 -->
+			<div class="part4">
+				<div class="c11"><img class="c2" src="1517358129660093490-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>INNERNEED硅胶冼澡刷</li></a>
+				<a class="z3" href="#"><li>¥49.00</li></a>
+				</ul>
+			</div>
+			<div class="part3">
+				<div class="c11"><img class="c2" src="呵呵.png"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>深爱美白全自动口腔清洁器</li></a>
+				<a class="z3" href="#"><li>¥368.00</li></a>
+				</ul>
+			</div>
+			<div class="part5">
+				<div class="c11"><img class="c2" src="1519611780084262484-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>FIPILOCK智能指纹锁-电镀银</li></a>
+				<a class="z3" href="#"><li>¥299.00</li></a>
+				</ul>
+			</div>
+			<div class="part5">
+				<div class="c11"><img class="c2" src="1519611796556871477-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>FIPILOCK智能指纹锁-电镀黑</li></a>
+				<a class="z3" href="#"><li>¥299.00</li></a>
+				</ul>
+			</div>
+			<div class="part6">
+				<div class="c11"><img class="c2" src="1517360315750498708-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>INNERNEED儿童餐盘-蓝色</li></a>
+				<a class="z3" href="#"><li>¥44.00</li></a>
+				</ul>
+			</div>
+		
+
+			<div class="part4">
+				<div class="c11"><img class="c2" src="1517360737400198469-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>INNERNEED棉被收纳袋</li></a>
+				<a class="z3" href="#"><li>¥23.00</li></a>
+				</ul>
+			</div>
+			<div class="part3">
+				<div class="c11"><img class="c2" src="1517361328769536145-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>Cling-纳米帖</li></a>
+				<a class="z3" href="#"><li>¥35.00</li></a>
+				</ul>
+			</div>
+			<div class="part5">
+				<div class="c11"><img class="c2" src="1517361125617850885-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>INNERNEED音符夹子</li></a>
+				<a class="z3" href="#"><li>¥20.00</li></a>
+				</ul>
+			</div>
+			<div class="part5">
+				<div class="c11"><img class="c2" src="1516927137216409922-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>FINO超薄数码收纳胸包2代</li></a>
+				<a class="z3" href="#"><li>¥199.00</li></a>
+				</ul>
+			</div>
+			<div class="part6">
+				<div class="c11"><img class="c2" src="1516571389736891176-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>MGeek麦极客能量盘</li></a>
+				<a class="z3" href="#"><li>¥179.00</li></a>
+				</ul>
+			</div>
+		
+
+			<div class="part4">
+				<div class="c11"><img class="c2" src="1516571547085837953-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>麦极客55℃咖啡杯(咖色)</li></a>
+				<a class="z3" href="#"><li>¥198.00</li></a>
+				</ul>
+			</div>
+			<div class="part3">
+				<div class="c11"><img class="c2" src="1516571681964881457-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>麦极客55℃马克杯(白色)</li></a>
+				<a class="z3" href="#"><li>¥98.00</li></a>
+				</ul>
+			</div>
+			<div class="part5">
+				<div class="c11"><img class="c2" src="1516243534316730364-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>柯莱仕R8皓月系列太空银</li></a>
+				<a class="z3" href="#"><li>¥458.00</li></a>
+				</ul>
+			</div>
+			<div class="part5">
+				<div class="c11"><img class="c2" src="1516571123808298740-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>Elfinbook X皮面本棕色</li></a>
+				<a class="z3" href="#"><li>¥128.00</li></a>
+				</ul>
+			</div>
+			<div class="part6">
+				<div class="c11"><img class="c2" src="1517184380180453315-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>Anker 苹果MFI认证数据线</li></a>
+				<a class="z3" href="#"><li>¥108.00</li></a>
+				</ul>
+			</div>
+		
+
+			<div class="part4">
+				<div class="c11"><img class="c2" src="数据线.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>TYPE-C安卓手机数据线</li></a>
+				<a class="z3" href="#"><li>¥89.00</li></a>
+				</ul>
+			</div>
+			<div class="part3">
+				<div class="c11"><img class="c2" src="aaa (2).jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>Anker拉车线2代苹果</li></a>
+				<a class="z3" href="#"><li>¥149.00</li></a>
+				</ul>
+			</div>
+			<div class="part5">
+				<div class="c11"><img class="c2" src="1517184991691801814-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>Anker拉车线2代苹果</li></a>
+				<a class="z3" href="#"><li>¥149.00</li></a>
+				</ul>
+			</div>
+			<div class="part5">
+				<div class="c11"><img class="c2" src="1516570880480603723-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>纯手绘陶瓷手绘杯生肖系列</li></a>
+				<a class="z3" href="#"><li>¥58.00</li></a>
+				</ul>
+			</div>
+			<div class="part6">
+				<div class="c11"><img class="c2" src="1516216608442143487-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>JS坚果音箱创意便携音响</li></a>
+				<a class="z3" href="#"><li>¥69.00</li></a>
+				</ul>
+			</div>
+		
+
+			<div class="part4">
+				<div class="c11"><img class="c2" src="1515545062476004009-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>迷你加湿取暖器-优雅银</li></a>
+				<a class="z3" href="#"><li>¥198.00</li></a>
+				</ul>
+			</div>
+			<div class="part3">
+				<div class="c11"><img class="c2" src="1516241871980776864-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>伊科菲儿智能杀菌水电解机P1</li></a>
+				<a class="z3" href="#"><li>¥1080.00</li></a>
+				</ul>
+			</div>
+			<div class="part5">
+				<div class="c11"><img class="c2" src="1516241700691898941-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>伊科菲儿智能杀菌水电解机</li></a>
+				<a class="z3" href="#"><li>¥1880.00</li></a>
+				</ul>
+			</div>
+			<div class="part5">
+				<div class="c11"><img class="c2" src="1516241784513263069-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>伊科智能杀菌水电解机H2</li></a>
+				<a class="z3" href="#"><li>¥1880.00</li></a>
+				</ul>
+			</div>
+			<div class="part6">
+				<div class="c11"><img class="c2" src="1516044547782420546-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>台湾Artiart新年限量礼盒</li></a>
+				<a class="z3" href="#"><li>¥258.00</li></a>
+				</ul>
+			</div>
+		
+			<div class="part4">
+				<div class="c11"><img class="c2" src="1516216463950895021-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>沙漏灯伴睡触控感应小夜灯</li></a>
+				<a class="z3" href="#"><li>¥128.00</li></a>
+				</ul>
+			</div>
+			<div class="part3">
+				<div class="c11"><img class="c2" src="1519668840254156486-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>NailEasy水性胶囊甲油-蛋糕</li></a>
+				<a class="z3" href="#"><li>¥349.00</li></a>
+				</ul>
+			</div>
+			<div class="part5">
+				<div class="c11"><img class="c2" src="1519612263532002041-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>NailEasy水性胶囊指甲油</li></a>
+				<a class="z3" href="#"><li>¥249.00</li></a>
+				</ul>
+			</div>
+			<div class="part5">
+				<div class="c11"><img class="c2" src="1514164962609816290-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>叽喳八音盒-榉木-萌趣粉</li></a>
+				<a class="z3" href="#"><li>¥89.00</li></a>
+				</ul>
+			</div>
+			<div class="part6">
+				<div class="c11"><img class="c2" src="1519870381463532136-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>朗萌儿童智能非电动牙刷</li></a>
+				<a class="z3" href="#"><li>¥198.00</li></a>
+				</ul>
+			</div>
+		
+
+		
+			<div class="part4">
+				<div class="c11"><img class="c2" src="1514159823118681205-478.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>苹果笔记本air电脑包</li></a>
+				<a class="z3" href="#"><li>¥99.00</li></a>
+				</ul>
+			</div>
+			<div class="part3">
+				<div class="c11"><img class="c2" src="1366856755382909147-233.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>乐扣提花弹力腰带-薄荷</li></a>
+				<a class="z3" href="#"><li>¥68.00</li></a>
+				</ul>
+			</div>
+			<div class="part5">
+				<div class="c11"><img class="c2" src="1410829619399552439-233.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>咔咔小马可调节手机支架</li></a>
+				<a class="z3" href="#"><li>¥39.00</li></a>
+				</ul>
+			</div>
+			<div class="part5">
+				<div class="c11"><img class="c2" src="1414030237561319511-233.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>创意迷你暖空调-绿色</li></a>
+				<a class="z3" href="#"><li>¥59.00</li></a>
+				</ul>
+			</div>
+			<div class="part6">
+				<div class="c11"><img class="c2" src="1382380474979523342-233.jpg"></div>
+				<div class="c10"><img class="c9" src="new.png"></div>
+				<ul class="z1">
+				<a class="z2" href="#"><li>招财猫碗-欢喜版</li></a>
+				<a class="z3" href="#"><li>¥99.00</li></a>
+				</ul>
+			</div>
+		</div>
+<!--总体的div -->
+	</div>
+
+
+
+		<!-- 尾部 -->
+		<div class="tail">
+			&nbsp
+			<div class="g1">
+				<div class="g5">
+					<img class="g2" src="footer_01.png">
+					<img class="g2" src="footer_02.png">
+					<img class="g2" src="footer_03.png">
+					<img class="g2" src="footer_04.png">
+				</div>
+				<div class="g5">
+					<img class="g2" src="footer_05.png">
+					<img class="g2" src="footer_06.png">
+					<img class="g2" src="footer_07.png">
+					<img class="g2" src="footer_09.png">
+				</div>
+			</div>
+				<!-- 底部 -->
+				<div class="j1">
+					<span class="j2">积分计划</span>
+					<span class="j2">|</span>
+					<span class="j2">优惠券/礼品卡</span>
+					<span class="j2">|</span>
+					<span class="j2">商品兑换券</span>
+					<span class="j2">|</span>
+					<span class="j2">发票制度</span>
+					<span class="j2">|</span>
+					<span class="j2">配送说明</span>
+					<span class="j2">|</span>
+					<span class="j2">退换货保障</span>
+					<span class="j2">|</span>
+					<span class="j2">趣玩B2B官网</span>
+
+				</div>
+
+				<!--页尾 -->
+				
+				<div class="l1 clearfix">
+					<div class="l2">
+					<span class="l2">关于我们</span>
+					<span class="l2">|</span>
+					<span class="l2">联系我们</span>
+					<span class="l2">|</span>
+					<span class="l2">友情链接</span>
+					<span class="l2">|</span>
+					<span class="l2">经销加盟</span>
+					<span class="l2">|</span>
+					<span class="l2">团购优惠</span>
+					<span class="l2">|</span>
+					<span class="l2">网站地图</span>
+					<span class="l2">|</span>
+					<span class="l2">加入趣玩</span>
+					<span class="l2">|</span>
+					<span class="l2">诚信网站</span>
+					</div>
+					<div class="l3">
+						<span class="l4">趣玩网 2008-2018 成都趣生活网络科技有限公司 版权所有 蜀ICP备14003947 | 京ICP证100388号</span>
+					</div>
+				</div>
+		</div>
+	
+</body>
+</html>
