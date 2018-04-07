@@ -1,0 +1,95 @@
+body{
+
+	background-image: url(background.png);
+	background-repeat: repeat-x;
+}
+
+.out{
+	width:960px;
+	margin:0 auto;
+}
+
+.ceshi_wh{
+	width: 200px;
+	height: 200px;
+	background-color: #666;
+}
+
+.ceshi_border{
+	border:1px red solid;
+}
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.header{
+	width:960px;
+	margin:37px auto ;
+	/*background-color:pink;*/
+}
+.logo1{
+	float:left;
+}	
+
+.logo{
+	margin-left:15px;
+	/*margin-right:100px;*/
+	margin-bottom:46px;
+
+
+}
+.nav{
+	float:right;
+	/*margin:22px;*/
+	padding:22px 0px 22px;
+}
+
+.li_01{
+	float:left;
+	border-left:1px dotted #666;
+	padding:0px 10px;
+
+}
+
+
+li>a{
+	font:14px Georgia;
+	color: #666666;
+	/*border:1px red solid;*/
+	/*margin-left:10px;*/
+	text-decoration:none;
+}
+li>p{
+	font:11px Tahoma;
+	color: #c7c7c7;
+	/*border:1px red solid;*/
+	/*margin-left:10px;*/
+}
+
+.bannar{
+	height: 356px;
+	background: url(yy.png) no-repeat bottom center;
+	position: relative;
+}
+.pointerDiv{
+	position: absolute;
+	top: 314px;
+	left: 17px;
+}
+.pointerDiv a{
+	float: left;
+	height: 17px;
+	width: 17px;
+	background: url(baiseanniu.png) no-repeat;
+	margin: 4px;
+}
+.pointerDiv .an2{
+	background: url(landeanniu.png) no-repeat;
+}
+.pointerDiv a:hover{
+	background: url(landeanniu.png) no-repeat;
+}
+
+
+
