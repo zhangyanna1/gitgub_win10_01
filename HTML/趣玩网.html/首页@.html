@@ -9,11 +9,32 @@
 	}
 
 	/*测试*/
+	.ceshi_wh{
+		width: 50px;
+		height: 50px;
+		background-color:red;
+	}
 	.ceshi_border{
 		border:1px solid #f00;
 	}
 	body{
 		padding-top:150px;
+	}
+
+	.head1 .ul_01{
+		display: block;
+		background-color:blue;
+	}
+
+
+
+
+	/*漂浮*/
+	.float_L{
+		float:left;
+	}
+	.float_R{
+		float:right;
 	}
 
 	
@@ -38,54 +59,73 @@
 			
 
 		}
-		.head1{width:495px;
-			   height: 49px;
-			   /*border: 1px red solid; */
-			   float: left;
+		.head1{
+				width:496px;
+				height: 49px;
+				/*width: 300px;*/
+				/*border: 1px red solid; */
+				float: left;
 
 		}
 		.head2{
-			  width: 854px;
+			  width: 853px;
 			  height: 49px;
 			  /*border: 1px red solid;*/
 			  float: left;
 
 		}
 		.p1{
+			/*border:1px red solid;*/
 			float: left;
 			list-style: none;
-			margin-left: 30px;
 			line-height: 49px;
 			text-decoration: none;
+			width: 100px
 			/*font-family: "微软雅黑";*/
-			
 		}
+
 		.p2{
 
 			float: left;
 			list-style: none;
-			margin-left: 20px;
+			/*margin-left: 20px;*/
 			line-height: 49px;
 			/*font-family: "微软雅黑";*/
-
-
-
 		}
+
+		.p3:hover{
+			background-color:#474545;
+			}
+
+
+
+	
 		.p3{
+			display:block;
 			text-decoration: none;
 			color: white;
 			font:13px "微软雅黑";
 			font-weight: bold;
+			line-height: 48px;
+			text-align: center;
+			/*border:1px solid red;*/
+		}
 
-
-			}
-		.p4{float: left;
+		.ps{
+			float: left;
 			margin-left: 400px;
 			width: 235px;
 			height: 47px;
 			outline:none;
 			border:1px solid white;
 		}
+
+		.a_02{
+			float: left;
+			width: 63px;
+			height: 47px;
+		}
+
 		.p5{line-height: 49px;
 			margin-left: 15px;
 			text-decoration: none;
@@ -97,8 +137,15 @@
 			height:49px; 
 		}
 		.t1{
-			float: left;
+			float:left;
+			width:96px;
+			height:49px;
+			background-image:url(趣玩sprite.png);
+			}
+		.t1:hover{
+			background-position: -96px 0px;
 		}
+		
 		.t2{height: 49px;
 			float: right;
 
@@ -117,13 +164,23 @@
 			font:13px "微软雅黑";
 			font-weight: bold;
 			color: white;
-			margin-left: 20px;
+			/*margin-left: 20px;*/
 
 			
 		}
 		.p9{
 			 line-height:32px;
+			  float:left;
+			 width:86px;
+			 height:31px;
+			 /*border:1px red solid;*/
+			 text-align:center;
 		}
+		
+		.p9:hover{
+			background-color: #474545;
+		}
+
 		.dd{
 			position:fixed;
 			left:10px;
@@ -344,6 +401,7 @@
 			font:13px "微软雅黑";
 
 		}
+
 	
 	
 	
@@ -351,35 +409,38 @@
 </head>
 <body bgcolor="#f2eadd">
 	<div class="dd"><img class="d1" src="p.png"></div>
-
 	<div class="ww">
 	<!-- 头部 -->
 		<div class="head">
-			<div class="head1">
-				<img class="t1" src="趣玩.png" alt="">
-				<div class="">
-					<ul class="">
-			<li class="p2"><a class="p3"  href="#">每日上新</a></li>
-			<li class="p1"><a class="p3" href="#">TOP50</a></li>
-			<li class="p1"><a class="p3" href="#">我勒个去</a></li>
-			<li class="p1"><a class="p3" href="#">趣玩App</a></li>
-		</ul>
-				</div>
+			<div class="head1 clearfix">
+				
+				<div class="t1 float_L"></div>
+
+				<ul>
+					<li class="p1"><a href="#" class="p3">每日上新</a></li>
+					<li class="p1"><a href="#" class="p3">TOP50</a></li>
+					<li class="p1"><a href="#" class="p3">我勒个去</a></li>
+					<li class="p1"><a href="#" class="p3">趣玩APP</a></li>
+				</ul>
+
+			
+
 			</div>
-			<div class="head2">
-				<input class="p4" type="text" >
+
+			<div class="head2 float_R">
+				<input class="ps" type="text" >
 				<img class="p7" src="放大镜.png">
-				<span class="p5"><a class="p3" href="">登录</a></span>
-				<span class="p6"><a class="p3" href="">注册</a></span>
+				<div class="a_02"><a class="p3" href="">登录</a></div>
+				<div class="a_02"><a class="p3" href="">注册</a></div>
 				<img class="t2" src="购物车.png" alt="">
 			</div>
 		</div>
 		<div class="head3">
-			<span class="p9"><a class="p8" href="#">家居良品</a></span>
-			<span class="p9"><a class="p8" href="#">男得好货</a></span>
-			<span class="p9"><a class="p8" href="#">清新萌物</a></span>
-			<span class="p9"><a class="p8" href="#">与众不童</a></span>
-			<span class="p9"><a class="p8" href="#">视频找好玩</a></span>
+			<div class="p9"><a class="p8" href="#">家居良品</a></div>
+			<div class="p9"><a class="p8" href="#">男得好货</a></div>
+			<div class="p9"><a class="p8" href="#">清新萌物</a></div>
+			<div class="p9"><a class="p8" href="#">与众不童</a></div>
+			<div class="p9"><a class="p8" href="#">视频找好玩</a></div>
 		</div>
 	</div>
 
