@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oInput01 = document.getElementById('input01');
+			var oInput02 = document.getElementById('input02');
+			var oSel = document.getElementById('select');
+			var oBtn = document.getElementById('btn');
+		
+			oBtn.onclick = function(){
+				var va101 = oInput01.value;
+				var va102 = oInput02.value;
+				var sel = oSel.value;
+				if (va101=="" || va102==""){
+					alert("不能是空的");
+					return;
+				}
+				if(isNaN(va101) || isNaN(va102)){
+					alert('输入数字');
+					return;
+				}
+
+				switch(sel){
+					case "0":
+						sel = ((parseFloat(va101))*100+(parseFloat(va102))*100)/100;
+						alert(sel);
+						break;
+					
+					case "1":
+						sel = (parseFloat(va101))*100-(parseFloat(va102))*100/100;
+						alert(sel);
+						break;
+					case "2":
+						sel = (parseFloat(va101)*100 * parseFloat(va102)*100)/10000;
+
+						alert(sel);
+						break;
+					case "3":
+						sel = (parseFloat(va101))*100/(parseFloat(va102))*100;
+						alert(sel);
+						break;
+				}
+			}
+		}	
+
+	</script>
+
+</head>
+<body>
+	<h1>计算器</h1>
+	<input type="text" id="input01">
+	<select id="select">
+	<optgroup value="">
+		<option value="0">+</option>
+		<option value="1">-</option>
+		<option value="2">*</option>
+		<option value="3">/</option>
+	</optgroup>
+	</select>
+	<input type="text" id="input02">
+	<input type="button" value="计算" id="btn">
+	
+	
+</body>
+</html>

@@ -1,19 +1,15 @@
 body{
-
+	height:3000px;
 	background-image: url(background.png);
 	background-repeat: repeat-x;
 }
 
 .out{
-	width:960px;
+	width:940px;
 	margin:0 auto;
+	/*border:1px red solid;*/
 }
 
-.ceshi_wh{
-	width: 200px;
-	height: 200px;
-	background-color: #666;
-}
 
 .ceshi_border{
 	border:1px red solid;
@@ -42,14 +38,14 @@ body{
 .nav{
 	float:right;
 	/*margin:22px;*/
-	padding:22px 0px 22px;
+	padding:20px 0px 20px;
+	margin-right:20px;
 }
 
 .li_01{
 	float:left;
 	border-left:1px dotted #666;
-	padding:0px 10px;
-
+	padding:0px 8px;
 }
 
 
@@ -92,4 +88,158 @@ li>p{
 }
 
 
+/*content开始*/
+.content h1{
+	text-align:center;
+	font:24px Georgia;
+	font-weight:bold;
+	padding:15px 0 30px;
+	background:url(yy.png) no-repeat bottom center;
+}
+
+.pe h2,.co h2,.ub h2{
+	font: 21px Georgia;
+	color:#2277a1;
+	text-indent:0.5em;
+}
+
+.content .pe,.content .co,.content .ub{
+	width:300px;
+	height:410px;
+	border:1px red solid;
+	float:left;
+	margin-top:40px;
+}
+.content .co{
+	margin:40px 17px 0 17px;
+	
+}
+
+.content .z1{
+	font:12px Helvetica;
+	color:#cecece;
+	text-indent:1em;
+}
+.tu1{
+	height:200px;
+	width:300px;
+	text-align:center;
+	background:url(pg.png) no-repeat;
+	margin:15px 0px;
+}
+
+.boy{
+	width:285px;
+	height:178px;
+	margin-top:12px;
+}
+.z2{
+	font:13px Tahoma;
+	color:#3e3e3e;
+	margin-left:12px;
+	word-spacing:1px;
+}
+.btn{
+	width:163px;
+	height:32px;
+	background:url(btn.png) no-repeat;
+	margin:22px 0px 35px 12px;
+
+}
+.btn1{
+	text-decoration:none;
+	font:12px Tahoma;
+	color:#659fbc;
+	line-height:32px;
+	margin-left:15px;
+}
+/*内容结束*/
+
+/*尾部开始*/
+.rump .so,.rump .con,.rump .ne{
+	width:300px;
+	height:410px;
+	border:1px red solid;
+	float:left;
+}
+.rump .con{
+	margin:0 17px 0 17px;
+	
+}
+.rump h2{
+	height:30px;
+	width:285px;
+	font:18px Georgia;
+	color:#444;
+	margin:43px 0px 0px 6px;
+	border-bottom:1px dashed #d3d3d3;
+
+}
+.con_h2{
+	height:30px;
+	width:275px;
+	/*margin:43px 0px 0px 6px;*/
+	border:1px dashed #d3d3d3;
+
+}
+
+	
+.rump .p1{
+	font:12px Helvetica;
+	color:#444;
+	margin-left:6px;
+	margin-top:15px;
+	/*margin-bottom:15px;*/
+}
+
+.xt{
+	display: inline-block;
+	margin:10px -0.5px 40px 0px;
+
+}
+.p2{
+	height:32px;
+	width:100%;
+	font:18px "Gill Sans MT";
+	color:#444;
+	font-weight:bold;
+	border-bottom:1px dashed #d3d3d3;
+	text-indent:0.3em;
+}
+.k1{
+	width:290px;
+	height:32px;
+	margin:15px 0px 0px 6px;
+}
+.btn2{
+	width:163px;
+	height:32px;
+	background:url(lk.png) no-repeat;
+	margin-left:4.5px;
+
+}
+.z3{
+	font:13px Georgia;
+	color:white;
+	text-decoration:none;
+	line-height:32px;
+	margin-left:10px;
+
+}
+.k2{
+	width:286px;
+	height:34px;
+	margin:15px 0px 8px 5px;
+}
+.k3{
+	width:286px;
+	height:34px;
+	margin:15px 0px 20px 5px;
+}
+.area{
+	width:286px;
+	height:134px;
+	margin-left:5px;
+	display:block;
+}
 
