@@ -1,0 +1,45 @@
+body{
+			font-family:'Microsoft Yahei';
+		}
+		body,ul{
+			margin:0px;
+			padding:0px;
+		}
+		ul{list-style:none;}
+		.main{
+			width:200px;
+			margin:20px auto 0;
+		}
+		.main .head,.main li ul a{
+			display:block;
+			width:200px;
+			height:30px;
+			line-height:30px;
+			text-decoration:none;
+			background-color:#3366cc;
+			color:#fff;
+			font-size:16px;
+			text-indent:10px;			
+		}
+		.main .head{
+			border-bottom:1px solid #afc6f6;
+			
+		}
+		.main li ul a{
+			font-size:14px;
+			text-indent:20px;
+			background-color:#7aa1ef;
+					
+		}
+		.main li ul li{
+			border-bottom:1px solid #afc6f6;
+		}
+		.main li ul{
+			display:none;
+		}
+		.main li ul.content{
+			display:block;
+		}
+		.main li ul li a:hover{
+			background-color:#f6b544;
+		}

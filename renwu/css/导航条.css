@@ -1,0 +1,66 @@
+	*{
+			padding: 0;
+			margin: 0;
+		}
+		.out{
+			height:40px;
+			width:960px;
+			/*border:1px solid red;*/
+			margin:250px auto;
+			background-color:#55A8EA;
+		}
+		.head{
+			list-style:none;
+			
+		}
+		.head li{
+			float:left;
+			width:96.5px;
+			height:40px;
+			/*border:1px solid blue;*/
+			font:14px "微软雅黑";
+			color:white;
+			background-color:#55A8EA;
+			line-height:40px;
+			text-align:center;
+		}
+		.head .content{
+			float:left;
+			width:96.5px;
+			height:40px;
+			/*border:1px solid blue;*/
+			font:14px "微软雅黑";
+			color:white;
+			background-color:#00619F;
+			line-height:40px;
+			text-align:center;
+		}
+		.head .b{
+			float:left;
+			width:96.5px;
+			height:40px;
+			/*border:1px solid blue;*/
+			font:14px "微软雅黑";
+			color:white;
+			background-color:#55A8EA;
+			line-height:40px;
+			text-align:center;
+		}
+		.b{
+			position: relative;
+		}
+		.aa{
+			position: absolute;	
+			top:-10px;
+			left:30px;
+		}
+		li:hover{
+			background-color:#00619F;
+		}
+		a{
+			text-decoration:none;
+			color:white;
+		}
+		.b:hover{
+			background-color:#00619F;
+		}
