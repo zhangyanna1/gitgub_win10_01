@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数组的常用方法</title>
+	<script type="text/javascript">
+		var aRr01 = [1,2,3,4];
+		var sTr = aRr01.join('-');//连接1-2-3-4
+		var sTr2 = aRr01.join('');//1234
+		// alert(sTr2);
+
+		// aRr01.push(5);//后插入
+		// alert(aRr01);
+		// aRr01.pop();//后删除
+		// alert(aRr01);
+
+		// aRr01.unshift(0);//前插入
+		// aRr01.shift();//前删除
+		// alert(aRr01);
+
+		// aRr01.reverse();//反转
+		// alert(aRr01);
+
+		var aRr2 = ['a','b','c','d','a','b','c','d'];
+		var num = aRr2.indexOf('b');//返回b第一次出现的索引
+		// alert(num);//1
+
+		//从第2角标元素开始，删除1个元素
+		// aRr2.splice(2,1);//a,b,d,a,b,c,d
+		//从第2角标元素开始，删除1个元素，插入e
+		aRr2.splice(4,4,'f','g','h','i');//a,b,c,d,f,g,h,i
+		alert(aRr2);
+	</script>
+</head>
+<body>
+</body>
+</html>

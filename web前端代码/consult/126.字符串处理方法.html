@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>字符串处理方法</title>
+	<script type="text/javascript">
+		var sTr = '2018-04-12';
+		var aRr = sTr.split('');
+		// alert(aRr);
+		// console.log(aRr);
+		// document.title = aRr;
+
+		var sTr2 = '#div1';
+		var sTr3 = '.div1';
+		var sTr4 = sTr2.charAt(0);
+		// if(sTr4 == '#'){
+		// 	alert('id选择器');
+		// }
+
+		var sTr5 = 'Microsoft Yahei';
+		var num = sTr5.indexOf('Yahei');
+		// alert(num);//弹出索引
+
+		var num2 = sTr5.indexOf('xihei');
+		// alert(num2);//没有找到-1
+
+		// var sTr6 = sTr5.substring(10,15);//从10截到15（不包括15）
+		var sTr6 = sTr5.substring(10);//从10截到结尾
+		// alert(sTr6);
+
+		// alert(sTr6.toUpperCase());//转大写YAHEI
+		alert(sTr6.toLowerCase());//转小写yahei
+	</script>
+</head>
+<body>
+</body>
+</html>

@@ -3,9 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<title>极盗无门III 双重安全公文背包</title>
-	<link rel="stylesheet" type="text/css" href="详情.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/details.css"/>
 	<style type="text/css"></style>
+	<link rel="stylesheet" type="text/css" href="选项卡.css"/>
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/js_01.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#lbb').hover(function() {
+				$('.lb2').slideToggle();//上收和下展
+			});
+		})
+		$(function(){
+			$('.t2').hover(function() {
+				$('.ss').slideToggle();//上收和下展
+			});
+		})
 
+
+
+		// 选项卡
+		$(function(){
+			$('#botton .btn').hover(function() {
+
+				$(this).addClass('cur').siblings().removeClass('cur');
+
+				$('.select .sel1').eq($(this).index()).addClass('active').siblings().removeClass('active');
+				// alert($('.select .sel1').index())
+			});
+		})
+	</script>
 </head>
 <body bgcolor="#f2eadd">
 	<div class="dd"><img class="d1" src="../image/p.png"></div>
@@ -27,9 +54,49 @@
 			<div class="head2 float_R">
 				<input class="ps" type="text" value="  腰带">
 				<img class="p7" src="../image/放大镜.png">
-				<div class="a_02"><a class="p3" href="">登录</a></div>
-				<div class="a_02"><a class="p3" href="">注册</a></div>
-				<img class="t2" src="../image/购物车.png" alt="">
+				<div class="a_02"><a class="p3" href="file:///D:/GitHub_win10_01/gitgub_win10_01/HTML/%E8%B6%A3%E7%8E%A9%E7%BD%91.html/html/%E7%99%BB%E5%BD%95.html">登录</a></div>
+				<div class="a_02"><a class="p3" href="file:///D:/GitHub_win10_01/gitgub_win10_01/HTML/%E8%B6%A3%E7%8E%A9%E7%BD%91.html/html/%E7%99%BB%E5%BD%95.html">注册</a></div>
+				<!-- <img class="t2" src="../image/购物车.png" alt=""> -->
+				<!-- //////////////////// -->
+				<div class="nb">
+					<img class="t2" src="../image/购物车.png" alt="" onmouseover="my_display_01('t2','ss')" onmouseout="my_display_02('t2','ss')">
+					<div class="ss" style="display: none;" onmouseover="my_display_01('t2','ss')" onmouseout="my_display_02('t2','ss')">
+						<div class="xt1">
+							<div class="xt2">
+								<img class="xtt" src="../image/xtt1.png">
+								<p class="xzz">兔子灯&nbsp;变色小夜...</p></br>
+								<p class="x1">x1</p></br>
+								<p class="xz">¥69.00元</p></br>
+								<p class="del">[删除]</p></br>
+							</div>
+						</div>
+						<div class="xt1">
+							<div class="xt2">
+								<img class="xtt" src="../image/xtt2.png">
+								<p class="xzz">INNERNEED...</p></br
+								<p class="x1">x1</p></br>
+								<p class="xz">¥20.00元</p></br>
+								<p class="del">[删除]</p></br>
+							</div>
+						</div>
+						<div class="xt1">
+							<div class="xt2">
+								<img class="xtt" src="../image/xtt3.png">
+								<p class="xzz">米拉卡纳米喷雾...</p></br>
+								<p class="x1">x1</p></br>
+								<p class="xz">¥138.00元</p><br>
+								<p class="del">[删除]</p></br>
+							</div>
+						</div>
+						<div class="xt3">
+							<p class="xzz xtt2">共三件商品</p></br>
+							<p class="xzz xtt2">金额总计：¥227.00元</p></br>
+							<p class="xtt2"><img src="../image/1.1.1.png"></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- ////////////////////////// -->
 			</div>
 		</div>
 
@@ -43,10 +110,9 @@
 	</div>
 	
 
-
 	<!-- 正文 -->
 
-	 <div class="content">
+	 <!-- <div class="content"> -->
 		<!-- 第一部分 -->
 		<div class="c1">
 			<div class="c2">
@@ -62,38 +128,52 @@
 					<div class="c11"><a href="#" class="c6"><img src="../image/fx1.png"></a></div>
 					<div class="c11"><a href="#" class="c7"><img src="../image/分享.png"></a></div>
 			</div>
-		
-	
-
-			<div class="border_2 clearfix">
-				<div class="b1"><img  class="bt" src="../image/ren.png"></div>
-				<div class="b2 b">极盗无门III 双重安全公文背包</div>
-			 	<div class="b3 b">¥418.00</div>
-				<div class="b4 b">品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌&nbsp;&nbsp;&nbsp;<a class="b5" href="#">XD Design</a></div>
-				<div class="b4 b">好评指数&nbsp;&nbsp;&nbsp;&nbsp;<img src="../image/xing.png">&nbsp;&nbsp;<a class="b5" href="#">0分(已有0人评分)</a></div>
-				<div class="b4 b">数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量&nbsp;&nbsp;
-					<!-- 文本框 -->
-					<a class="b6" href="#"><img src="../image/3-5.png"></a>
-					<input class="b7" type="text">
-					<a class="b8" href="#"><img src="../image/3-6.png"></a>
-					<!-- 文本框结束 -->
+			<!-- ////////////////////// -->
+			<div id="border_2">
+				<div class="middle">
+					<div class="select">
+						<div class="sel1 active"><img src="../image/ren.png"></div>
+						<div class="sel1"><img src="../image/xuanxiang2.png"></div>
+						<div class="sel1"><img src="../image/xuanxiang3.png"></div>
+						<div class="sel1"><img src="../image/xuanxiang4.png"></div>
+					</div>
+							
+					<div class="botton" id="botton">
+						<div class="btn cur"><img class="small" src="../image/bao1.png"></div>
+						<div class="btn"><img class="small" src="../image/bao2.png"></div>
+						<div class="btn"><img class="small" src="../image/bao3.png"></div>
+						<div class="btn"><img class="small" src="../image/bao4.png"></div>
+					</div>
 				</div>
- 				<div class="b9 b">
- 					<a href="#"><img class="b10" src="../image/gowu.png"></a>
- 					<a href="#"><img src="../image/love.png"></a>
- 					<a href="#"><img src="../image/shouji.png"></a>
- 				</div>
+				<div class="middle1">
+					<div class="b2 b">极盗无门III 双重安全公文背包</div>
+					<div class="b3 b">¥418.00</div>
+						<div class="b4 b">品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌&nbsp;&nbsp;&nbsp;<a class="b5" href="#">XD Design</a></div>
+						<div class="b4 b">好评指数&nbsp;&nbsp;&nbsp;&nbsp;<img src="../image/xing.png">&nbsp;&nbsp;<a class="b5" href="#">0分(已有0人评分)</a></div>
+						<div class="b4 b">数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量&nbsp;&nbsp;
+						<!-- 文本框 -->
+						<a class="b6" href="#"><img src="../image/3-5.png"></a>
+						<input class="b7" type="text">
+						<a class="b8" href="#"><img src="../image/3-6.png"></a>
+						<!-- 文本框结束 -->
+						</div>
+						<div class="b9 b">
+ 						<a href="file:///D:/GitHub_win10_01/gitgub_win10_01/HTML/%E8%B6%A3%E7%8E%A9%E7%BD%91.html/html/%E8%B4%AD%E7%89%A9%E8%BD%A6.html"><img class="b10" src="../image/shopp.png"></a>
+ 						<a href="#"><img src="../image/love.png"></a>
+ 						<a href="#"><img src="../image/shouji.png"></a>
+ 						</div>
  					<div class="b11"><img src="../image/tiao.png"></div>
  					<div class="b11"><img src="../image/tiao1.png"></div>
- 			</div>	
- 			
- 			<div class="b12">
- 				<div class="b13"><img class="b14" src="../image/bao1.png"></div>
- 				<div class="b13"><img class="b14" src="../image/bao2.png"></div>
- 				<div class="b13"><img class="b14" src="../image/bao3.png"></div>
- 				<div class="b13"><img class="b14" src="../image/bao4.png"></div>
- 			</div>
- 		</div>
+				</div>
+			</div>
+			<!-- /////////////////// -->
+		</div>
+	<!-- </div> -->
+
+	
+
+
+
  	
 <!-- 第一分over -->
 

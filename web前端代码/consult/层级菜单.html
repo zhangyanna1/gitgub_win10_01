@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			font-family:"微软雅黑";
+		}
+		body,ul{
+			margin:0px;
+			padding:0px;
+			
+		}
+		ul{
+			list-style:none;
+		}
+		.out{
+			width:200px;
+			margin:20px auto 0 ;
+		}
+		.out .every, .out ul li a{
+			display: block;
+			text-decoration: none;
+			height:30px;
+			width:200px;
+			line-height:30px;
+			background-color:#3366cc;
+			color:white;
+			font:16px;
+			text-indent:15px;
+		}
+		.out .every{
+
+			border-bottom:1px solid #afc6f6;
+			
+		}
+		.out li ul a{
+			font:14px;
+			text-indent:10px;
+			background-color:#7aa1ef;
+		}
+		.out li ul li{
+			border-bottom:1px solid #afc6f6;
+		}
+		.out ul{
+			display: none;
+		}
+		.out ul.content{
+			display:block;
+		}
+		.out ul li a:hover{
+			background-color:#f6b544;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//当点击标题的时候
+			$('.every').click(function() {
+				// $(this).next().toggleClass('current');
+				// $(this).next().slideToggle();
+				$(this).next().slideDown().parent().siblings().children('ul').slideUp();
+			});
+		})
+	</script>
+</head>
+<body>
+	<ul class="out">
+		<li>
+			<a href="#" class="every">水果</a>
+			<ul class="content">
+				<li><a href="#">苹果</a></li>
+				<li><a href="#">西瓜</a></li>
+				<li><a href="#">香蕉</a></li>
+				<li><a href="#">橘子</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#" class="every">水果</a>
+			<ul>
+				<li><a href="#">苹果</a></li>
+				<li><a href="#">西瓜</a></li>
+				<li><a href="#">香蕉</a></li>
+				<li><a href="#">橘子</a></li>
+			</ul>
+		</li>
+		<li>
+			<a class="every" href="#">水果</a>
+			<ul>
+				<li><a href="#">苹果</a></li>
+				<li><a href="#">西瓜</a></li>
+				<li><a href="#">香蕉</a></li>
+				<li><a href="#">橘子</a></li>
+			</ul>
+		</li>
+		<li>
+			<a class="every" href="#">水果</a>
+			<ul>
+				<li><a href="#">苹果</a></li>
+				<li><a href="#">西瓜</a></li>
+				<li><a href="#">香蕉</a></li>
+				<li><a href="#">橘子</a></li>
+			</ul>
+		</li>
+		<li>
+			<a class="every" href="#">水果</a>
+			<ul>
+				<li><a href="#">苹果</a></li>
+				<li><a href="#">西瓜</a></li>
+				<li><a href="#">香蕉</a></li>
+				<li><a href="#">橘子</a></li>
+			</ul>
+		</li>
+	</ul> 
+</body> 
+</html>

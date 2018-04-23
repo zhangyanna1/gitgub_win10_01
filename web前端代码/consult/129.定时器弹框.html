@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定时器弹框</title>
+	<style type="text/css">
+		.pop{
+			width: 400px;
+			height: 300px;
+			background-color: #fff;
+			border: 1px solid #000;
+			position: fixed;
+			left: 50%;
+			top: 50%;
+			margin-left: -200px;
+			margin-top: -150px;
+			z-index: 9999;
+		}
+		.mask{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background-color: #000;
+			left: 0;
+			top: 0;
+			opacity: 0.3;
+			filter: alpha(opacity=30);
+			z-index: 9990;
+		}
+		.pop_con{
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+		/*
+		setTimeout 单次
+		clearTimeout
+		setInterval	反复
+		clearInterval
+		*/
+		// setTimeout(myAlert, 3000);
+
+		window.onload = function(){
+			var oPop = document.getElementById('pop');
+			var oShut = document.getElementById('shutOff');
+			var oMask = document.getElementById('mask');
+			
+			// setTimeout(showPop, 3000);
+
+			// function showPop(){
+			// 	oPop.style.display = 'block';
+			// }
+
+			setTimeout(function(){
+				oPop.style.display = 'block';
+			},3000);
+
+			oShut.onclick = function(){
+				oPop.style.display = 'none';
+			}
+			oPop.onclick = function(){
+				oPop.style.display = 'none';
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>首页标题</h1>
+	<p>页面内容</p>
+	<a href="http://www.baidu.com">百度网</a>
+
+
+
+	<div class="pop_con" id="pop">
+		<div class="pop">
+			<h3>提示信息！</h3>
+			<a href="#" id="shutOff">关闭</a>
+		</div>
+		<div class="mask" id="mask"></div>
+	</div>
+</body>
+</html>

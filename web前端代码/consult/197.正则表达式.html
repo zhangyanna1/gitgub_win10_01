@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>正则表达式</title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		var re = new RegExp('a', 'ig');
+		var re2 = /a/ig;
+
+		var str = 'abc';
+		// alert(re2.test(str));//true
+
+		re2 = /ad/ig;
+		// alert(re2.test(str));//false
+
+		var re3 = /\d/;
+		var str3 = '123';
+		// alert(re3.test(str3));//true
+
+		str3 = '123abc';
+		// alert(re3.test(str3));//true
+
+		re3 = /\d/g;
+		// alert(re3.test(str3));//true
+
+		re3 = /^\d$/;//^以什么开头，$以什么结尾
+		// alert(re3.test(str3));//false
+
+		str3 = '123ab4';
+		// alert(re3.test(str3));//false
+
+		str3 = '123';
+		re3 = /^\d+$/;//+号匹配一个或多个
+		// alert(re3.test(str3));//true
+
+		str3 = '123abc';
+		re3 = /^\d+$/;
+		// alert(re3.test(str3));//false
+
+		str3 = '123ab4';
+		re3 = /^\d+$/;
+		// alert(re3.test(str3));//false
+
+		var re4 = /\w/;// \w匹配一个字母、数字、下划线
+		var str4 = '@asd';
+		// alert(re4.test(str4));//true
+
+		re4 = /^\w/;
+		str4 = '@asd';
+		// alert(re4.test(str4));//false
+
+		re4 = /^\w/;
+		str4 = 'as@d';
+		// alert(re4.test(str4));//true
+
+		re4 = /^\w+$/;
+		str4 = 'as@d';
+		// alert(re4.test(str4));//false
+
+		var str5 = '123asdf4568fasdf5566gfd79';
+		var re5 = /\d+/;
+		var arr = str5.match(re5);
+		// alert(arr);//123
+
+		re5 = /\d+/g;
+		arr = str5.match(re5);
+		// alert(arr);//123,4568,5566,79
+
+		var re6 = /d/;//select * from student;
+		// alert(str5.search(re6));//5返回下标索引，匹配不上返回-1，indexOf()
+
+		var str6 = str5.replace(re5,'*');
+		alert(str6);//*asdf*fasdf*gfd*
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

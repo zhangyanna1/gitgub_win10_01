@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>节点操作</title>
+	<style type="text/css">
+		
+	</style>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var $span = $('<span>span元素</span>');
+			// var $p = $('<p>p段落元素</p>');
+			var $p = $('#p1');
+			var $h = $('<h1>页面标题</h1>');
+
+			//往后面插入子元素
+			$('#div1').append($span);
+			// $('#div1').append($p);
+			// $span.appendTo('#div1');
+			// $p.appendTo('#div1');
+
+			//往前面插入子元素
+			//prepend()和prependTo()
+
+			//在div前边插入兄弟元素h1
+			// $('#div1').before($h);
+			$h.insertBefore('#div1');
+
+			//在div后边插入兄弟元素h1
+			//after和insertAfter
+
+			//删除p标签
+			$p.remove();
+		})
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<p id="p1">这是一个p标签</p>
+	</div>
+</body>
+</html>

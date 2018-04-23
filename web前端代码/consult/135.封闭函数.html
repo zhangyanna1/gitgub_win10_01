@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>封闭函数</title>
+	<script type="text/javascript">
+		// function myAlert(){
+		// 	var str = '欢迎访问我的主页！';
+		// 	alert(str);
+		// }
+
+		// myAlert();
+
+		var str = function(){
+			alert('test');
+		}()
+
+		/*;(function(){
+			var str = '欢迎访问我的主页！';
+			alert(str);
+		})();*/
+
+		!function(){
+			var str = '欢迎访问我的主页！';
+			alert(str);
+		}();
+	</script>
+</head>
+<body>
+</body>
+</html>

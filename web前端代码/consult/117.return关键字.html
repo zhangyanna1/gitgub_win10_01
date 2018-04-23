@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>return关键字</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oInput01 = document.getElementById('input01');
+			var oInput02 = document.getElementById('input02');
+			var oBtn = document.getElementById('btn');
+
+			oBtn.onclick = function(){
+				var val01 = oInput01.value;
+				var val02 = oInput02.value;
+				var rs = add(val01, val02);
+				alert(rs);
+			}
+
+			function add(a, b){
+				var c = parseInt(a) + parseInt(b);
+				return c;
+				// alert('计算完成');
+				// return;
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="input01">
+	<input type="text" id="input02">
+	<input type="button" value="相加" id="btn">
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery特殊效果</title>
+	<style type="text/css">
+		.box{
+			width: 200px;
+			height: 200px;
+			background-color: gold;
+			display: none;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#btn').click(function() {
+				// $('.box').fadeToggle();//淡入淡出
+				// $('.box').toggle();//显示隐藏
+				$('.box').slideToggle();//上收和下展
+			});
+		})
+	</script>
+</head>
+<body>
+	<input type="button" value="效果" id="btn">
+	<div class="box"></div>
+</body>
+</html>

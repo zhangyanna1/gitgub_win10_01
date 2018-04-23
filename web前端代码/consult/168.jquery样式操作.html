@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery样式操作</title>
+	<style type="text/css">
+		.big{
+			font-size: 30px;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// alert($('.div1').css('fontSize'));
+			$('.div1').css({background:'gold'});
+
+			$('.div1').addClass('big');
+			$('.div1').removeClass('div1');
+		})
+	</script>
+</head>
+<body>
+	<div class="div1">这是一个div元素</div>
+</body>
+</html>

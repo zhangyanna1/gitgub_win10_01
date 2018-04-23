@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery其他事件</title>
+	<style type="text/css">
+		
+	</style>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		//原生JS
+		// window.onload = function(){
+		// }
+
+		//JQuery写法
+		$(window).load(function(){
+
+		})
+		//文档节点加载完毕
+		$(document).ready(function(){
+
+		})
+		//ready简写
+		$(function(){
+
+		})
+		//窗口改变尺寸的时候
+		$(window).resize(function(){
+			console.log('3');
+		})
+	</script>
+</head>
+<body>
+	<div id="div1"></div>
+</body>
+</html>

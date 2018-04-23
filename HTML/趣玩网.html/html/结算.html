@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>趣玩结算</title>
+	<link rel="stylesheet" type="text/css" href="../css/knot.css"/>
+	<style type="text/css"></style>
+
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/js_01.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.lb1').hover(function() {
+				$('.lb2').slideToggle();//上收和下展
+			});
+		})
+		$(function(){
+			$('.t2').hover(function() {
+				$('.ss').slideToggle();//上收和下展
+			});
+		})
+	</script>
+</head>
+<body bgcolor="#f2eadd">
+	<div class="dd"><img class="d1" src="../image/p.png"></div>
+	<div class="ww">
+	<!-- 头部 -->
+		<div class="head">
+			<div class="head1 clearfix">
+				<div class="t1 float_L"></div>
+				<ul>
+					<li class="p1"><a href="#" class="p3">每日上新</a></li>
+					<li class="p1"><a href="#" class="p3">TOP50</a></li>
+					<li class="p1"><a href="#" class="p3">我勒个去</a></li>
+					<li class="p1"><a href="#" class="p3">趣玩APP</a></li>
+				</ul>
+			</div>
+
+			<div class="head2 float_R">
+				<input class="ps" type="text" >
+				<img class="p7" src="../image/放大镜.png">
+				<img class="dt1" src="../image/dongtai.png">
+				<div class="lb1">
+					<img src="../image/qqh.png">
+					<div class="lb2"><ul class="lb3">
+						<li class="lb4"><a class="lb5" href="#">我的订单</a></li>
+						<li class="lb4"><a class="lb5" href="#">我的积分(0)</a></li>
+						<li class="lb4"><a class="lb5" href="#">我的纪念日 </a></li>
+						<li class="lb4"><a class="lb5" href="#">我的优惠券</a> </li>
+						<li class="lb4"><a class="lb5" href="#">邀请好友</a> </li>
+						<li class="lb4"><a class="lb5" href="#">资料设置</a> </li>
+						<li class="lb4"><a class="lb5" href="#">退出 </a></li>
+					</ul></div>
+				</div>
+				<!-- <img class="t2" src="../image/购物车.png" alt=""> -->
+				<!-- ////////// /////////////////-->
+				<div class="nb">
+					<img class="t2" src="../image/购物车.png" alt="" onmouseover="my_display_01('t2','ss')" onmouseout="my_display_02('t2','ss')">
+					<div class="ss" style="display: none;" onmouseover="my_display_01('t2','ss')" onmouseout="my_display_02('t2','ss')">
+						<div class="xt1">
+							<div class="xt2">
+								<img class="xtt" src="../image/xtt1.png">
+								<p class="xzz">兔子灯&nbsp;变色小夜...</p></br>
+								<p class="x1">x1</p></br>
+								<p class="xz">¥69.00元</p></br>
+								<p class="del">[删除]</p></br>
+							</div>
+						</div>
+						<div class="xt1">
+							<div class="xt2">
+								<img class="xtt" src="../image/xtt2.png">
+								<p class="xzz">INNERNEED...</p></br
+								<p class="x1">x1</p></br>
+								<p class="xz">¥20.00元</p></br>
+								<p class="del">[删除]</p></br>
+							</div>
+						</div>
+						<div class="xt1">
+							<div class="xt2">
+								<img class="xtt" src="../image/xtt3.png">
+								<p class="xzz">米拉卡纳米喷雾...</p></br>
+								<p class="x1">x1</p></br>
+								<p class="xz">¥138.00元</p><br>
+								<p class="del">[删除]</p></br>
+							</div>
+						</div>
+						<div class="xt3">
+							<p class="xzz xtt2">共三件商品</p></br>
+							<p class="xzz xtt2">金额总计：¥227.00元</p></br>
+							<p class="xtt2"><img src="../image/1.1.1.png"></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- //////////////////////// -->
+			</div>
+		</div>
+		<div class="head3">
+			<div class="p9"><a class="p8" href="#">家居良品</a></div>
+			<div class="p9"><a class="p8" href="#">男得好货</a></div>
+			<div class="p9"><a class="p8" href="#">清新萌物</a></div>
+			<div class="p9"><a class="p8" href="#">与众不童</a></div>
+			<div class="p9"><a class="p8" href="#">视频找好玩</a></div>
+		</div>
+	</div>
+
+<!-- 头部over -->
+<!-- 内容开始 -->
+<div class="content">
+	<div class="content1">
+		<div class="c1">
+			<div class="c2"><img src="../image/111.png"></div>
+			<div class="c3">您在购物过程中有任何疑问，请查阅帮助中心，或致电400-696-8686</div>
+		</div>
+		<div class="content2">收货人信息</div>
+		<div class="content3">
+
+			<div class="border_1">
+				<span class="c4">&nbsp;收货人姓名:</span>
+				<input class="kun_1" type="text">
+			</div></br>
+			<!-- 第一行 -->
+
+			<div class="border_2">
+				<span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;所在城市:</span>
+				<select class="xl_1">
+					<option>请选择省份</option>
+					<option>北京</option>
+					<option>上海</option>
+					<option>河北省</option>
+					<option>江苏省</option>
+					<option>新疆维吾尔族</option>
+				</select>
+				<select class="xl_1">
+					<option>请选市</option>
+				</select>
+				<select class="xl_1">
+					<option>请选区</option>
+				</select>
+			</div></br>
+			<!-- 第二行 -->
+			<div class="border_3">
+				<span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;详细地址:</span>
+				<input class="kun_2" type="text">
+			</div></br>
+			<!-- 第三行 -->
+			<div class="border_4">
+				<span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;手机号码:</span>
+				<input class="kun_1" type="text">
+				<span class="c5">固定号码:</span>
+				<input class="kun_1" type="text">
+				<span class="c6">(手机和固定电话请至少填写一项)</span>
+			</div>
+			<div class="content4"><img src="../image/xinxi.png"></div>
+		</div>
+		<div class="content5">
+			<p class="s1">配送与付款方式</p>
+			<p class="s2"><img src="../image/baoqian.png"></p>
+		</div>
+		<div class="content6">
+			<div class="s3">
+				<img class="s4" src="../image/peisong.png">
+				<div class="s5">
+
+					<div class="s6">
+						<div class="s8"><input type="radio" name="gender"><label for="male"></label></div>
+						<div class="s9"><img src="../image/fu1.png"></div>
+						<div class="s8"><input type="radio" name="gender"></div>
+						<div class="s9"><img src="../image/fu2.png"></div>
+						<div class="s8"><input type="radio" name="gender"></div>
+						<div class="s9"><img src="../image/fu3.png"></div>
+						<div class="s8"><input type="radio" name="gender"></div>
+						<div class="s9"><img src="../image/fu4.png"></div>
+					</div>
+					<div class="s7">
+						<div class="s8"><input type="radio" name="gender"><label for="male"></label></div>
+						<div class="s9"><img src="../image/fu5.png"></div>
+						<div class="s8"><input type="radio" name="gender"></div>
+						<div class="s9"><img src="../image/fu6.png"></div>
+					</div>
+				</div>
+				<div class="border_5">
+					<div class="s10">
+						<div class="s13">
+							<div class="s14"><input type="radio" name="gender"><label for="male"></label></div>
+							<div class="s15"><img src="../image/fu7.png"></div>
+						</div>
+						<div class="s13">
+							<div class="s14"><input type="radio" name="gender"></div>
+							<div class="s15"><img src="../image/fu10.png"></div>
+						</div>
+						<div class="s13">
+							<div class="s14"><input type="radio" name="gender"></div>
+							<div class="s15"><img src="../image/fu15.png"></div>
+						</div>
+					</div>
+
+				<!-- /// ///////-->
+					<div class="s11">
+						<div class="s13">
+							<div class="s14"><input type="radio" name="gender"><label for="male"></label></div>
+							<div class="s15"><img src="../image/fu8.png"></div>
+						</div>
+						<div class="s13">
+							<div class="s14"><input type="radio" name="gender"></div>
+							<div class="s15"><img src="../image/fu13.png"></div>
+						</div>
+						<div class="s13">
+							<div class="s14"><input type="radio" name="gender"></div>
+							<div class="s15"><img src="../image/fu14.png"></div>
+						</div>
+					</div>
+
+					<!-- /////////// -->
+					<div class="s12">
+						<div class="s13">
+							<div class="s14"><input type="radio" name="gender"><label for="male"></label></div>
+							<div class="s15"><img src="../image/fu9.png"></div>
+						</div>
+						<div class="s13">
+							<div class="s14"><input type="radio" name="gender"></div>
+							<div class="s15"><img src="../image/fu12.png"></div>
+						</div>
+						<div class="s13">
+							<div class="s14"><input type="radio" name="gender"></div>
+							<div class="s15"><img src="../image/fu15.png"></div>
+						</div>
+					</div>
+					<!-- //////////////// -->
+					<div class="s16">
+						<div class="s13">
+							<div class="s14"><input type="radio" name="gender"><label for="male"></label></div>
+							<div class="s15"><img src="../image/fu16.png"></div>
+						</div>
+						<div class="s13">
+							<div class="s14"><input type="radio" name="gender"></div>
+							<div class="s15"><img src="../image/fu17.png"></div>
+						</div>
+						<div class="s13">
+							<div class="s14"><input type="radio" name="gender"></div>
+							<div class="s15"><img src="../image/fu19.png"></div>
+						</div>
+					</div>
+				</div>
+				<div><img src="../image/fukuan.png"></div>
+			</div>
+		</div>
+		<div class="content7">
+			<span class="nn">商品清单</span>
+			<span class="n1"> << 返回购物车修改</span>
+		</div>
+		<div class="content8">
+			<div class="vv">
+				<div class="v1">商品</div>
+				<div>
+					<span class="v2">小计</span>
+					<span class="v2">数量</span>
+					<span class="v2">花费积分</span>
+					<span class="v2">单价</span>
+				</div>
+			</div>
+			<div class="v3">
+				<div class="v4"><img src="../image/g1.png"></div>
+				<div class="v5">极盗无门|||双重安全公文背包</div>
+				<div class="v7">¥418.00</div>
+				<div class="v6">1</div>
+				<div class="v8">0</div>
+				<div class="v9">¥418.00</div>
+			</div>
+			<div class="v10">
+				<div class="v4"><img src="../image/g2.png"></div>
+				<div class="v5">郎萌儿童智能非电动牙刷</div>
+				<div class="v7">¥198.00</div>
+				<div class="v6">1</div>
+				<div class="v8">0</div>
+				<div class="v9">¥198.00</div>
+			</div>
+			<div class="v11">
+				<div class="v4"><img src="../image/g3.png"></div>
+				<div class="v5">招财猫碗-欢喜版</div>
+				<div class="v7">¥100.00</div>
+				<div class="v6">1</div>
+				<div class="v8">0</div>
+				<div class="v9">¥100.00</div>
+			</div>
+			<div class="content9">
+				<div class="gg">
+					<div class="g2">
+						<div class="g4"><input type="checkbox">要送礼，价格和发货信息向收货人保密</div>
+						<div class="g4"><input type="checkbox">索要发票 [修改]</div>
+					</div>
+					<div class="g3">
+						<div><span class="g5">商品金额:</span><span class="g6">¥716.00</span></div>
+						<div class="g5">花费积分：0</div>
+						<div><span class="g5">运费:</span><span class="g6">¥0.00</span></div>
+					</div>
+				</div>
+				<div class="g1">
+					<div class="g8">
+						<div class="g10">发票抬头:</div>
+						<div class="g10">纳税人识别号:</div>
+						<div class="g10">电子发票邮箱:</div>
+					</div>
+					<div class="g9"><span class="g11">应付金额:</span><span class="g12">¥0.00</span></div>
+				</div>
+			</div>
+			<div class="over"><img class="ov1" src="../image/提交.png"></div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- 内容结束 -->
+<!-- 底部开始 -->
+
+		<div class="tail">
+			<div class="b1">
+				<div class="b5">
+					<img class="b2" src="../image/footer_01.png">
+					<img class="b2" src="../image/footer_02.png">
+					<img class="b2" src="../image/footer_03.png">
+					<img class="b2" src="../image/footer_04.png">
+				</div>
+				<div class="b5">
+					<img class="b2" src="../image/footer_05.png">
+					<img class="b2" src="../image/footer_06.png">
+					<img class="b2" src="../image/footer_07.png">
+					<img class="b2" src="../image/footer_09.png">
+				</div>
+			</div>
+				<!-- 底部 -->
+				<div class="j1">
+					<span class="j2">积分计划</span>
+					<span class="j2">|</span>
+					<span class="j2">优惠券/礼品卡</span>
+					<span class="j2">|</span>
+					<span class="j2">商品兑换券</span>
+					<span class="j2">|</span>
+					<span class="j2">发票制度</span>
+					<span class="j2">|</span>
+					<span class="j2">配送说明</span>
+					<span class="j2">|</span>
+					<span class="j2">退换货保障</span>
+					<span class="j2">|</span>
+					<span class="j2">趣玩B2B官网</span>
+
+				</div>
+
+				<!--页尾 -->
+				
+				<div class="l1 clearfix">
+					<div class="l2">
+					<span class="l2">关于我们</span>
+					<span class="l2">|</span>
+					<span class="l2">联系我们</span>
+					<span class="l2">|</span>
+					<span class="l2">友情链接</span>
+					<span class="l2">|</span>
+					<span class="l2">经销加盟</span>
+					<span class="l2">|</span>
+					<span class="l2">团购优惠</span>
+					<span class="l2">|</span>
+					<span class="l2">网站地图</span>
+					<span class="l2">|</span>
+					<span class="l2">加入趣玩</span>
+					<span class="l2">|</span>
+					<span class="l2">诚信网站</span>
+					</div>
+					<div class="l3">
+						<span class="l4">趣玩网 2008-2018 成都趣生活网络科技有限公司 版权所有 蜀ICP备14003947 | 京ICP证100388号</span>
+					</div>
+				</div>
+		</div>
+	
+</body>
+</html>

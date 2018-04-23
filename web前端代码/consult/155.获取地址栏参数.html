@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>获取地址栏参数</title>
+	<script type="text/javascript">
+
+		window.onload = function(){
+
+			var data = window.location.search;
+			// alert(data);
+			var hash = window.location.hash;
+			alert(hash);
+			var oSpan = document.getElementById('span01');
+			var arr = data.split('=');
+			// alert(arr);
+			var name = arr[1];
+			oSpan.innerHTML = name;
+		}
+	</script>
+</head>
+<body>
+	<div>欢迎<span id="span01"></span>访问我的主页</div>
+</body>
+</html>

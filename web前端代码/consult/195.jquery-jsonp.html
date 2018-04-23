@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery-jsonp</title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$.ajax({
+			url: 'js/data.js',//跨域请求的地址
+			type: 'get',
+			dataType: 'jsonp',//使用jsonp跨域请求
+			jsonpCallback:'aa'//这里的名字aa必须得跟data.js的内容对上才行
+		})
+		.done(function(data) {
+			alert(data.name);
+		})
+		.fail(function() {
+			console.log("error");
+		});
+		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

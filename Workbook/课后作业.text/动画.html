@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.aa{
+			width:500px;
+			height:250px;
+			border:1px black solid;
+			margin-top:220px;
+			margin-left:400px;
+			
+		}
+		.a1{
+			display:inline-block;
+			width:50px;
+			height:100px;
+			background-color:skyblue;
+			margin-top:80px;
+			margin-left:50px;
+			border-radius:50px;
+			animation: moving 1s ease 1s infinite alternate both;
+		}
+		
+		.a2{
+			display:inline-block;
+			width:50px;
+			height:100px;
+			background-color:pink;
+			margin-top:80px;
+			margin-left:50px;
+			border-radius:50px;
+			animation: moving 1s ease 1.2s infinite alternate both;
+		}
+		.a3{display:inline-block;
+			width:50px;
+			height:100px;
+			background-color:gold;
+			margin-top:80px;
+			margin-left:50px;
+			border-radius:50px;
+			animation: moving 1s ease 1.3s infinite alternate both;
+		}
+		.a4{display:inline-block;
+			width:50px;
+			height:100px;
+			background-color:blue;
+			margin-top:80px;
+			margin-left:50px;
+			border-radius:50px;
+			animation: moving 1s ease 1.4s infinite alternate both;
+		}
+			@keyframes moving{
+			0%{
+				transform:scaleY(50,50);
+			}
+			50%{
+				transform:scale(0);
+			}
+			100%{
+				transform:scale(1,1);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="aa">
+		<div class="a1"></div>
+		<div class="a2"></div>
+		<div class="a3"></div>
+		<div class="a4"></div>
+	</div>
+</body>
+</html>

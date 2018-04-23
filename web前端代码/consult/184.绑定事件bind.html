@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绑定事件bind</title>
+	<style type="text/css">
+		
+	</style>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			/*$('#btn').click(function() {
+				
+			});*/
+
+			$('#btn').bind('click mouseover', function() {
+				alert('hello!');
+				//取消绑定
+				$(this).unbind('mouseover');
+			});
+		})
+	</script>
+</head>
+<body>
+	<input type="button" value="按钮" id="btn">
+</body>
+</html>

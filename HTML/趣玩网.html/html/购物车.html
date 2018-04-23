@@ -2,10 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>购物车</title>
-	<link rel="stylesheet" type="text/css" href="购物车.css"/>
+	<title>趣玩购物网</title>
+	<link rel="stylesheet" type="text/css" href="../css/shopping.css"/>
 	<style type="text/css"></style>
 
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/js_01.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#lbb').hover(function() {
+				$('.lb2').slideToggle();//上收和下展
+			});
+		})
+		$(function(){
+			$('.t2').hover(function() {
+				$('.ss').slideToggle();//上收和下展
+			});
+		})
+	</script>
 </head>
 <body bgcolor="#f2eadd">
 	<div class="dd"><img class="d1" src="../image/p.png"></div>
@@ -13,9 +27,7 @@
 	<!-- 头部 -->
 		<div class="head">
 			<div class="head1 clearfix">
-				
 				<div class="t1 float_L"></div>
-
 				<ul>
 					<li class="p1"><a href="#" class="p3">每日上新</a></li>
 					<li class="p1"><a href="#" class="p3">TOP50</a></li>
@@ -25,14 +37,63 @@
 			</div>
 
 			<div class="head2 float_R">
-				<input class="ps" type="text" value="  腰带">
+				<input class="ps" type="text" >
 				<img class="p7" src="../image/放大镜.png">
-				<div class="a_02"><a class="p3" href="">登录</a></div>
-				<div class="a_02"><a class="p3" href="">注册</a></div>
-				<img class="t2" src="../image/购物车.png" alt="">
+				<img class="dt1" src="../image/dongtai.png">
+				<div class="lb1">
+					<img id="lbb" src="../image/qqh.png">
+					<div class="lb2"><ul class="lb3">
+						<li class="lb4"><a class="lb5" href="#">我的订单</a></li>
+						<li class="lb4"><a class="lb5" href="#">我的积分(0)</a></li>
+						<li class="lb4"><a class="lb5" href="#">我的纪念日 </a></li>
+						<li class="lb4"><a class="lb5" href="#">我的优惠券</a> </li>
+						<li class="lb4"><a class="lb5" href="#">邀请好友</a> </li>
+						<li class="lb4"><a class="lb5" href="#">资料设置</a> </li>
+						<li class="lb4"><a class="lb5" href="#">退出 </a></li>
+					</ul></div>
+				</div>
+			
+				<!-- /////////////////////////// -->
+					<div class="nb">
+					<img class="t2" src="../image/购物车.png" alt="" onmouseover="my_display_01('t2','ss')" onmouseout="my_display_02('t2','ss')">
+					<div class="ss" style="display: none;" onmouseover="my_display_01('t2','ss')" onmouseout="my_display_02('t2','ss')">
+						<div class="xt1">
+							<div class="xt2">
+								<img class="xtt" src="../image/xtt1.png">
+								<p class="xzz">兔子灯&nbsp;变色小夜...</p></br>
+								<p class="x1">x1</p></br>
+								<p class="xz">¥69.00元</p></br>
+								<p class="del">[删除]</p></br>
+							</div>
+						</div>
+						<div class="xt1">
+							<div class="xt2">
+								<img class="xtt" src="../image/xtt2.png">
+								<p class="xzz">INNERNEED...</p></br>
+								<p class="x1">x1</p></br>
+								<p class="xz">¥20.00元</p></br>
+								<p class="del">[删除]</p></br>
+							</div>
+						</div>
+						<div class="xt1">
+							<div class="xt2">
+								<img class="xtt" src="../image/xtt3.png">
+								<p class="xzz">米拉卡纳米喷雾...</p></br>
+								<p class="x1">x1</p></br>
+								<p class="xz">¥138.00元</p><br>
+								<p class="del">[删除]</p></br>
+							</div>
+						</div>
+						<div class="xt3">
+							<p class="xzz xtt2">共三件商品</p></br>
+							<p class="xzz xtt2">金额总计：¥227.00元</p></br>
+							<p class="xtt2"><img src="../image/1.1.1.png"></p>
+						</div>
+					</div>
+				</div>
+				<!-- ////////////////////////// -->
 			</div>
 		</div>
-
 		<div class="head3">
 			<div class="p9"><a class="p8" href="#">家居良品</a></div>
 			<div class="p9"><a class="p8" href="#">男得好货</a></div>
@@ -41,3 +102,150 @@
 			<div class="p9"><a class="p8" href="#">视频找好玩</a></div>
 		</div>
 	</div>
+
+
+<!-- 头部结束 -->
+<!-- 内容区 -->
+<div class="content">
+	<div class="c1">
+		<div class="c2"><img src="../image/1hang.png"></div>
+		<div class="c3"><span class="c4">我的购物车</span><span class="c5">&nbsp;&nbsp;&nbsp;|实付满199元即免运费，您已经免运费了！</span></div>
+		<div class="c6">
+			<div class="c8">操作</div>
+			<div class="c8">小计</div>
+			<div class="c8">数量</div>
+			<div class="c8">花费积分</div>
+			<div class="c8">单价</div>
+			<div class="c7">商品</div>
+		</div>
+		<div class="c9">
+			<div class="c10">
+				<div class="c11"><img src="../image/g1.png"></div>
+				<div class="c12">极盗无门|||双重安全公文背包</div>
+				<div class="c13">操作</div>
+				<div class="c14">¥418.00</div>
+				<div class="cc">
+					<a href="#"><img class="c15" src="../image/kuang.png"></a>
+					<input class="c16" type="text">
+					<a href="#"><img class="c17" src="../image/kuang1.png"></a>
+				</div>
+				<div class="c18">0</div>
+				<div class="c19">¥418.00</div>
+			</div>
+
+
+			<div class="c10">
+				<div class="c20"><img src="../image/g2.png"></div>
+				<div class="c21">郎萌儿童智能非电动牙刷</div>
+				<div class="c22">操作</div>
+				<div class="c23">¥198.00</div>
+				<div class="cc">
+					<a href="#"><img class="c24" src="../image/kuang.png"></a>
+					<input class="c25" type="text">
+					<a href="#"><img class="c26" src="../image/kuang1.png"></a>
+				</div>
+				<div class="c27">0</div>
+				<div class="c28">¥198.00</div>
+			</div>
+
+
+			<div class="c10">
+				<div class="c30"><img src="../image/g3.png"></div>
+				<div class="c31">招财猫碗-欢喜版</div>
+				<div class="c32">操作</div>
+				<div class="c33">¥100.00</div>
+				<div class="cc">
+					<a href="#"><img class="c34" src="../image/kuang.png"></a>
+					<input class="c35" type="text">
+					<a href="#"><img class="c36" src="../image/kuang1.png"></a>
+				</div>
+				<div class="c37">0</div>
+				<div class="c38">¥100.00</div>
+			</div>
+		</div>
+		
+		<div class="oo">
+			<div class="o1">输入优惠券/兑换券代码:</div>
+			<div class="o2"><input class="o6" type="text" name=""></div>
+			<div class="o3"><img class="o5" src="../image/使用.png"></div>
+			<div class="o4">使用已有的优惠券>></div>
+		</div>
+		<div class="a1_1">
+			<div class="a2_2"></div>
+			<div class="a3_3">
+				<p class="a4_4">商品金额：¥716.00</p>
+				<p class="a4_4">花费积分：0</p>
+				<p class="a4_4">(不含运费)</p>
+			</div>
+		</div>
+		<div class="A1">
+			<div class="A1_2"><a href="file:///D:/GitHub_win10_01/gitgub_win10_01/HTML/%E8%B6%A3%E7%8E%A9%E7%BD%91.html/html/%E7%BB%93%E7%AE%97.html"><img src="../image/ququ.png"></a></div>
+			<div class="A1_1"><a href="file:///D:/GitHub_win10_01/gitgub_win10_01/HTML/%E8%B6%A3%E7%8E%A9%E7%BD%91.html/html/%E9%A6%96%E9%A1%B5@.html"><img src="../image/jixu.png"></a></div>
+		</div>
+	</div>
+</div>
+
+
+<!--内容结束 -->
+<!-- 尾部开始 -->
+		<!-- 尾部 -->
+		<div class="tail">
+			&nbsp;
+			<div class="g1">
+				<div class="g5">
+					<img class="g2" src="../image/footer_01.png">
+					<img class="g2" src="../image/footer_02.png">
+					<img class="g2" src="../image/footer_03.png">
+					<img class="g2" src="../image/footer_04.png">
+				</div>
+				<div class="g5">
+					<img class="g2" src="../image/footer_05.png">
+					<img class="g2" src="../image/footer_06.png">
+					<img class="g2" src="../image/footer_07.png">
+					<img class="g2" src="../image/footer_09.png">
+				</div>
+			</div>
+				<!-- 底部 -->
+				<div class="j1">
+					<span class="j2">积分计划</span>
+					<span class="j2">|</span>
+					<span class="j2">优惠券/礼品卡</span>
+					<span class="j2">|</span>
+					<span class="j2">商品兑换券</span>
+					<span class="j2">|</span>
+					<span class="j2">发票制度</span>
+					<span class="j2">|</span>
+					<span class="j2">配送说明</span>
+					<span class="j2">|</span>
+					<span class="j2">退换货保障</span>
+					<span class="j2">|</span>
+					<span class="j2">趣玩B2B官网</span>
+
+				</div>
+
+				<!--页尾 -->
+				
+				<div class="l1 clearfix">
+					<div class="l2">
+					<span class="l2">关于我们</span>
+					<span class="l2">|</span>
+					<span class="l2">联系我们</span>
+					<span class="l2">|</span>
+					<span class="l2">友情链接</span>
+					<span class="l2">|</span>
+					<span class="l2">经销加盟</span>
+					<span class="l2">|</span>
+					<span class="l2">团购优惠</span>
+					<span class="l2">|</span>
+					<span class="l2">网站地图</span>
+					<span class="l2">|</span>
+					<span class="l2">加入趣玩</span>
+					<span class="l2">|</span>
+					<span class="l2">诚信网站</span>
+					</div>
+					<div class="l3">
+						<span class="l4">趣玩网 2008-2018 成都趣生活网络科技有限公司 版权所有 蜀ICP备14003947 | 京ICP证100388号</span>
+					</div>
+				</div>
+		</div>
+	

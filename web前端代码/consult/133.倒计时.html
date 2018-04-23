@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>倒计时</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			window.location.href = "http://www.baidu.com";
+			
+			var oDiv = document.getElementById('div1');
+			function timeleft(){
+				var now = new Date();
+				var future = new Date(2018,3,12,15,26,0);//10是11月
+				// alert(future - now);
+
+				var milli = parseInt((future-now) / 1000);
+				var day = parseInt(milli / 86400);
+				var hour = parseInt((milli % 86400) / 3600);
+				var minute = parseInt((milli % 86400)%3600 / 60);
+				var second = milli % 60;
+
+				oDiv.innerHTML = '距离2018年11月12日00时00分00秒还有' + day + '天' + toDouble(hour) + '时' + toDouble(minute) + '分' + toDouble(second) + '秒';
+
+				if(milli <= 0){
+					window.location.href = "http://www.baidu.com";
+				}
+			}
+			timeleft();
+			setInterval(timeleft, 1000);
+		}
+
+		function toDouble(num){
+			if(num < 10){
+				return '0' + num;
+			}else{
+				return num;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="div1"></div>
+</body>
+</html>

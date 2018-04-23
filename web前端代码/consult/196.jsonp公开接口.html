@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jsonp公开接口</title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		//https://sug.so.360.cn/suggest?callback=suggest_so&encodein=utf-8&encodeout=utf-8&format=json&fields=word&word=s
+		
+		
+		$(function(){
+			$('#txt01').keyup(function() {
+				var val = $(this).val();
+				$.ajax({
+					url: 'https://sug.so.360.cn/suggest?',
+					type: 'get',
+					dataType: 'jsonp',
+					data: {word: val}
+				})
+				.done(function(data) {
+					console.log(data);
+					// alert(data.s.length);
+					$('.list').empty();//先清空列表
+
+					for(var i=0;i<data.s.length; i++){
+						var $li = $('<li>'+data.s[i]+'</li>');
+						$li.prependTo('.list');
+					}
+				})
+				.fail(function() {
+					console.log("error");
+				});
+			});
+		})
+	</script>
+</head>
+<body>
+	<input type="text" id="txt01">
+	<ul class="list"></ul>
+</body>
+</html>

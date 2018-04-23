@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js中括号操作属性</title>
+	<style type="text/css">
+		
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oDiv = document.getElementById('div1');
+			var attr = 'color';
+			oDiv['style'][attr] = 'red';
+
+			alert(oDiv.innerHTML);
+
+			var oDiv2 = document.getElementById('div2');
+			// oDiv2.innerHTML = '这是第二个div元素';
+			oDiv2.innerHTML = "<a href='http://www.baidu.com'>百度网</a>"
+		}
+	</script>
+</head>
+<body>
+	<div id="div1">这是一个div元素</div>
+	<div id="div2"></div>
+</body>
+</html>

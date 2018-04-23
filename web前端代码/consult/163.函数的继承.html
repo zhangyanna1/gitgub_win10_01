@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数的继承</title>
+	<script type="text/javascript">
+		function Fclass(name, age){
+			this.name = name;
+			this.age = age;
+		}
+
+		Fclass.prototype.showName = function(){
+			alert(this.name);
+		}
+		Fclass.prototype.showAge = function(){
+			alert(this.age);
+		}
+
+		function Sclass(name,age,job){
+			//属性的继承
+			Fclass.call(this,name,age);
+			this.job = job;
+		}
+		//方法继承：将父类的一个实例赋值给子类的原型属性
+		Sclass.prototype = new Fclass();
+		Sclass.prototype.showJob = function(){
+			alert(this.job);
+		}
+
+		var Driver = new Sclass('driver', 18, '老司机');
+		Driver.showName();
+		Driver.showAge();
+		Driver.showJob();
+	</script>
+</head>
+<body>
+</body>
+</html>

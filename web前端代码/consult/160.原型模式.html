@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>原型模式</title>
+	<script type="text/javascript">
+		function Person(name,age,job){
+			this.name = name;
+			this.age = age;
+			this.job = job;
+		}
+		Person.prototype.showName = function(){
+			alert(this.name);
+		}
+		Person.prototype.showAge = function(){
+			alert(this.age);
+		}
+		Person.prototype.showJob = function(){
+			// alert(this.job);
+			document.write(this.job);
+		}
+
+		var Lucy = new Person('lucy', 18, '测试鼠');
+		var Lily = new Person('lily', 19, '市场鸡');
+
+		Lucy.showJob = function(){
+			alert('我的工作是' + this.job);
+		}
+		Lucy.showJob();
+		Lily.showJob();
+
+		alert(Lucy.showJob == Lily.showJob);
+	</script>
+</head>
+<body>
+</body>
+</html>

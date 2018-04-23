@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>单体创建对象</title>
+	<script type="text/javascript">
+		var Tom = {
+			name:'tom',
+			age:18,
+
+			showName:function(){
+				alert(this.name);
+			},
+			showAge:function(){
+				alert(this.age);
+			}
+		}
+
+		alert(Tom.name);
+		alert(Tom.age);
+		Tom.showName();
+	</script>
+</head>
+<body>
+</body>
+</html>

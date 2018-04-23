@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>趣玩网</title>
-	<link rel="stylesheet" type="text/css" href="首页.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/prelude.css"/>
 	<style type="text/css"></style>
 </head>
 <body bgcolor="#f2eadd">
@@ -16,7 +16,7 @@
 				<ul>
 					<li class="p1"><a href="#" class="p3">每日上新</a></li>
 					<li class="p1"><a href="#" class="p3">TOP50</a></li>
-					<li class="p1"><a href="#" class="p3">我勒个去</a></li>s
+					<li class="p1"><a href="#" class="p3">我勒个去</a></li>
 					<li class="p1"><a href="#" class="p3">趣玩APP</a></li>
 				</ul>
 			</div>
@@ -24,8 +24,8 @@
 			<div class="head2 float_R">
 				<input class="ps" type="text" >
 				<img class="p7" src="../image/放大镜.png">
-				<div class="a_02"><a class="p3" href="">登录</a></div>
-				<div class="a_02"><a class="p3" href="">注册</a></div>
+				<div class="a_02"><a class="p3" href="file:///D:/GitHub_win10_01/gitgub_win10_01/HTML/%E8%B6%A3%E7%8E%A9%E7%BD%91.html/html/%E7%99%BB%E5%BD%95.html">登录</a></div>
+				<div class="a_02"><a class="p3" href="file:///D:/GitHub_win10_01/gitgub_win10_01/HTML/%E8%B6%A3%E7%8E%A9%E7%BD%91.html/html/%E7%99%BB%E5%BD%95.html">注册</a></div>
 				<img class="t2" src="../image/购物车.png" alt="">
 			</div>
 		</div>
@@ -52,9 +52,19 @@
 			<div class="part1">
 				<img class="c1" src="../image/img_url1451507.jpg">
 			</div>
+			<!-- //////////// -->
 			<div class="part2">
-				<img class="c6" src="../image/动图.png">
+				<div id="demo">
+					<div id=demo1> 
+					<img class="ft1" src="../image/jietu4.png"><br><img class="ft1" src="../image/jietu1.png"><br><img class="ft1" src="../image/jietu3.png"><br> 
+					<img class="ft1" src="../image/jietu5.png"><br><img class="ft1" src="../image/jietu2.png"><br><img class="ft1" src="../image/jietu6.png"><br> 
+					<img class="ft1" src="../image/jietu4.png"><br><img class="ft1" src="../image/jietu3.png"><br><img class="ft1" src="../image/jietu3.png"><br> 
+					<img class="ft1" src="../image/jietu5.png"><br><img class="ft1" src="../image/jietu2.png"><br><img class="ft1" src="../image/jietu6.png"><br> 
+					</div> 
+					<div id=demo2></div> 
+				</div>
 			</div>
+			<!--  -->
 			<div class="part2">
 				<img class="c2" src="../image/1515545062476004009-478.jpg">
 				<ul class="z1">
@@ -500,6 +510,22 @@
 					</div>
 				</div>
 		</div>
-	
+
+<script language="javascript"> 
+	var speed=20
+	demo2.innerHTML=demo1.innerHTML 
+	demo.scrollTop=demo.scrollHeight 
+	function Marquee(){ 
+	if(demo1.offsetTop-demo.scrollTop>=0) 
+	demo.scrollTop+=demo2.offsetHeight 
+	else{ 
+	demo.scrollTop-- 
+} 
+} 
+	var MyMar=setInterval(Marquee,speed) 
+	demo.onmouseover=function() {clearInterval(MyMar)} 
+	demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)} 
+</script> 
+
 </body>
 </html>

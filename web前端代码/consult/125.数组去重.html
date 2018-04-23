@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数组去重</title>
+	<script type="text/javascript">
+		var aRr = [6,5,4,8,1,2,3,5,4,9,1,5,2,5,1,8,5,1,5,1];
+		var aRr2 = [];
+
+		for(var i = 0; i < aRr.length; i++){
+			if(aRr.indexOf(aRr[i]) == i){
+				aRr2.push(aRr[i]);
+			}
+		}
+
+		alert(aRr2);
+	</script>
+</head>
+<body>
+</body>
+</html>
